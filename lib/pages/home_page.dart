@@ -112,13 +112,13 @@ class HomePage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   final expert = industryExperts[index];
                   return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                    child: InfoCard(
-                      name: expert['name']!,
-                      organization: expert['organization']!,
-                      color: AppColors.primaryBlue,
-                    ),
-                  );
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      child: InfoCard(
+                        name: expert['name']!,
+                        organization: expert['organization']!,
+                        color: AppColors.primaryBlue,
+                        url: expert['link'] ?? 'https://socialconclave.in',
+                      ));
                 },
               ),
             ),
@@ -150,13 +150,13 @@ class HomePage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   final jury = juryMembers[index];
                   return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                    child: InfoCard(
-                      name: jury['name']!,
-                      organization: jury['organization']!,
-                      color: AppColors.primaryGreen,
-                    ),
-                  );
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      child: InfoCard(
+                        name: jury['name']!,
+                        organization: jury['organization']!,
+                        color: AppColors.primaryGreen,
+                        url: jury['link'] ?? 'https://socialconclave.in',
+                      ));
                 },
               ),
             ),

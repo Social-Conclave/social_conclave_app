@@ -34,6 +34,7 @@ class FullListPage extends StatelessWidget {
               name: item['name']!,
               organization: item['organization']!,
               color: color,
+              url: item['link'] ?? 'https://socialconclave.in',
             );
           },
         ),
