@@ -12,7 +12,8 @@ class HomePage extends StatelessWidget {
     return SafeArea(
       child: SingleChildScrollView(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Header
             Row(
@@ -26,7 +27,8 @@ class HomePage extends StatelessWidget {
                         color: AppColors.primaryBlue,
                         fontSize: 38,
                         height: 0.9,
-                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Nohemi',
+                        fontWeight: FontWeight.w700, // Bold
                       ),
                       softWrap: true,
                       maxLines: 2,
@@ -41,19 +43,20 @@ class HomePage extends StatelessWidget {
                   backgroundImage:
                       AssetImage('assets/logo.png'), // Add your logo image here
                   radius: 40,
+                  backgroundColor: Colors.transparent,
                 ),
               ],
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 40),
 
             // Updates Section
             Text(
               'UPDATES',
               style: TextStyle(
-                color: AppColors.primaryGreen,
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
+                  color: AppColors.primaryGreen,
+                  fontSize: 18,
+                  fontFamily: 'Nohemi',
+                  fontWeight: FontWeight.w200),
             ),
             SizedBox(height: 10),
             Container(
